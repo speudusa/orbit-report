@@ -7,12 +7,12 @@
             <th>Orbit Type</th>
             <th>Launch Date</th>
         </tr>
-        <tr *ngFor = "let sat of satellites">
-            <td>{{sat.name}}</td>
-            <td>{{sat.type}}</td>
-            <td>{{sat.operational}}</td>
-            <td>{{sat.type}}</td>
-            <td>{{sat.launchDate}}</td>
+        <tr *ngFor = "let satellite of satellites">
+            <td>{{satellite.name}}</td>
+            <td>{{satellite.type}}</td>
+            <td>{{satellite.operational}}</td>
+            <td>{{satellite.orbitType}}</td>
+            <td>{{satellite.launchDate}}</td>
         </tr>
     
     
