@@ -1,8 +1,11 @@
+<!-- <app-orbit-list [satellites]="displayList"></app-orbit-list> -->
+<!--line 1 is breaking the table.  Need to work on displayList settings-->
+
 <h3>Orbit Report</h3>
     <table>
         <tr class = "header-row">
-            <th class = "sortable">Name</th>
-            <th class = "sortable">Type</th>
+            <th class = "sortable" (click)="sort('name')">Name</th>
+            <th class = "sortable" (click)="sort('type')">Type</th>
             <th>Operational</th>
             <th>Orbit Type</th>
             <th>Launch Date</th>
@@ -14,8 +17,7 @@
             <td>{{satellite.orbitType}}</td>
             <td>{{satellite.launchDate}}</td>
         </tr>
-    
-        <!-- Trying to turn one single data item red, not entire collumn -->
+
     
     </table>
 
